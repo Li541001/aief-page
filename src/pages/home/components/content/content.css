@@ -1,0 +1,44 @@
+.content_bg_right {
+  position: relative;
+  width: 40vw;
+  height: 400vh;
+  background-color: #e7a0a9;
+  right: -10vw;
+  top: 400vh;
+  z-index: 1;
+  border-radius: 30px;
+  border: 1px soild #faf0d9;
+  font-family: "Montserrat", sans-serif;
+}
+.content_bg_right::before {
+  content: "";
+  position: relative;
+  display: block;
+  background: linear-gradient(to left, transparent, #faf0d9);
+  border: none;
+  outline: none;
+  width: 10px;
+  height: 100%;
+}
+.content_bg_left {
+  position: relative;
+  width: 40vw;
+  height: 400vh;
+  background-color: #e7a0a9;
+  border: 1px soild #faf0d9;
+  right: 55vw;
+  top: 1200vh;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.content_bg_left::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(to right, transparent, #faf0d9);
+  border: none;
+  outline: none;
+  width: 10px;
+  height: 100%;
+  right: 0px;
+}

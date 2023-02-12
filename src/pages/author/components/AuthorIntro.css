@@ -1,0 +1,74 @@
+.intro-range {
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+.intro-range:nth-child(odd) {
+  background-color: #bbbbbb;
+}
+.intro-range:nth-child(even) {
+  background-color: rgb(255, 248, 231);
+}
+.intro-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(200%);
+  transition: 1s ease-in-out;
+}
+.intro-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.intro-author {
+  margin-top: 10vh;
+  height: 70%;
+  border: 2px solid snow;
+}
+.intro-name {
+  margin-top: 2vh;
+  font-weight: bold;
+  font-size: 30px;
+}
+.line {
+  width: 2px;
+  height: 70vh;
+  margin: 0px 10% 0px -10%;
+  border-left: 2px solid black;
+}
+.intro-ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  margin-top: 30vh;
+}
+.intro-li {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(50, 102, 104);
+  position: relative;
+}
+.intro-text {
+  margin-right: 5%;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 25px;
+  color: black;
+}
+
+.anime {
+  opacity: 1;
+  transform: translateY(0%);
+}

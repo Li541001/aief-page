@@ -1,0 +1,93 @@
+.cir_bg {
+  background-color: #bbbbbb;
+  height: 90vh;
+}
+.cir_container {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.slider_no {
+  display: none;
+}
+.slider_yes {
+  position: absolute;
+  transform: translateX(0%);
+  text-align: center;
+}
+.slider_front {
+  position: absolute;
+  transform: translateX(-400%);
+  text-align: center;
+}
+.slider_back {
+  position: absolute;
+  transform: translateX(400%);
+  text-align: center;
+  z-index: -999;
+}
+
+.animes {
+  transition: 2s;
+}
+
+.cir_img {
+  border: 2px solid white;
+  height: 70vh;
+  box-shadow: 0 0 10px 1px gray;
+}
+.cir_img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dot_container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #3f3f3f;
+}

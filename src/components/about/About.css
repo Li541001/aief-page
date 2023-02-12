@@ -1,0 +1,27 @@
+.about-range {
+  background-color: rgb(79, 79, 79);
+
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  padding-top: 10px;
+}
+.about-ctrl {
+  position: relative;
+  height: 3vh;
+  display: flex;
+}
+.about-gif {
+  height: 100%;
+}
+
+.about-content {
+  color: #fff;
+  font-size: 12px;
+
+  padding: 5px;
+}

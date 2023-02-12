@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+  background-color: #7b7b7b;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.title-text {
+  position: relative;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.fan {
+  opacity: 0.15;
+  position: absolute;
+  bottom: -100px;
+  right: 20%;
+  width: 20%;
+  transform: rotate(15deg);
+}

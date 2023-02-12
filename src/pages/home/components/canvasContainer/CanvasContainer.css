@@ -1,0 +1,6 @@
+.canvas_contrainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #faf0d9;
+  position: relative;
+}
