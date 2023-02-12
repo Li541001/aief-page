@@ -32,7 +32,7 @@ const Navv = (props) => {
           <ul className="nav-ul">
             <li className="nav-li">
               <Link
-                to="/home"
+                to=""
                 className="link"
                 onClick={() => {
                   setValue(1);
