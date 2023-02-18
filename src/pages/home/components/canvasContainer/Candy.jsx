@@ -27,9 +27,24 @@ export function Candy(props) {
     const range5 = scroll.range(26 / 36, 4 / 36);
     const isRange5 = scroll.visible(22 / 36, 12 / 36);
     const range6 = scroll.range(32 / 36, 2 / 36);
-    const isRange6 = scroll.visible(30 / 36, 6 / 36);
+    const isRange6 = scroll.visible(30 / 36, 10 / 36);
 
-    const isRange7 = scroll.visible(35 / 36, 4 / 36);
+    const isRange7 = scroll.visible(31.5 / 36, 20 / 36);
+    const isRange8 = scroll.visible(35 / 36, 10 / 36); 
+
+    if(isRange7){
+      props.end1.current.className = "title_third title_active";
+    }
+    else{
+      props.end1.current.className = "title_third";
+    }
+    if(isRange8){
+      props.end2.current.className = "title_forth title_active2";
+    }
+    else{
+      props.end2.current.className = "title_forth";
+    }
+
     if ((isRange2 == false) & (isRange3 == false)) {
       group.current.rotation.y =
         Math.cos(state.clock.getElapsedTime() * 1.2) * 0.05 + 1.4;
@@ -37,13 +52,13 @@ export function Candy(props) {
     if (isRange6) {
       group.current.position.x = THREE.MathUtils.damp(
         group.current.position.x,
-        -(userHeight / 10000) * range6,
+        -(userHeight / 3000) * range6,
         5,
         delta
       );
       group.current.position.y = THREE.MathUtils.damp(
         group.current.position.y,
-        -(userHeight / 10000) * range6,
+        -(userHeight / 8000) * range6,
         5,
         delta
       );
@@ -107,16 +122,6 @@ export function Candy(props) {
         5,
         delta
       );
-    }
-    /*console.log(group.current.scale.z )*/
-    if (isRange7) {
-      props.button_ref1.current.className =
-        "button_container button_action button_action1";
-      props.button_ref2.current.className =
-        "button_container button_action button_action2";
-    } else {
-      props.button_ref1.current.className = "button_container button_action1";
-      props.button_ref2.current.className = "button_container button_action2";
     }
   });
 

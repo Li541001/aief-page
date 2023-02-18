@@ -9,10 +9,14 @@
   border-radius: 30px;
   border: 1px soild #faf0d9;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .content_bg_right::before {
   content: "";
-  position: relative;
+  position: absolute;
   display: block;
   background: linear-gradient(to left, transparent, #faf0d9);
   border: none;
@@ -30,6 +34,10 @@
   top: 1200vh;
   border-radius: 30px;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .content_bg_left::after {
   content: "";
@@ -42,3 +50,91 @@
   height: 100%;
   right: 0px;
 }
+
+.content_title{
+  position: relative;
+  color: #333;
+  right: -3vw;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 90%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.content_bg_right div:nth-child(1){
+  top:60vh;
+}
+.content_bg_right div:nth-child(2){
+  top:60vh;   
+}
+.content_bg_right div:nth-child(3){
+  top:150vh;
+}
+.content_bg_right div:nth-child(4){
+  top:150vh;
+}
+.content_bg_right div:nth-child(5){
+  top:280vh;
+}
+.content_bg_right div:nth-child(6){
+  top:280vh;
+}
+.content_bg_right div:nth-child(7){
+  top:440vh;
+  font-size: 3rem;
+}
+.content_bg_right div:nth-child(8){
+  top:440vh;
+  font-size: 1rem;
+}
+
+.content_bg_left div:nth-child(1){
+  top:60vh;
+  left: 3.5vw;
+}
+.content_bg_left div:nth-child(2){
+  top:60vh;   
+  left: 3vw;
+}
+.content_bg_left div:nth-child(3){
+  top:150vh;
+  left: 3.5vw;
+}
+.content_bg_left div:nth-child(4){
+  top:150vh;
+  left: 3vw;
+}
+.content_bg_left div:nth-child(5){
+  top:280vh;
+  left: 3.5vw;
+}
+.content_bg_left div:nth-child(6){
+  top:280vh;
+  left: 3vw;
+  
+}
+.content_bg_left div:nth-child(7){
+  top:440vh;
+  font-size: 3rem;
+  left: 3.5vw;
+}
+.content_bg_left div:nth-child(8){
+  top:440vh;
+  font-size: 1rem;
+  left: 3vw;
+}
+.content_content{
+  position: relative;
+  color: #333;
+  right: -3vw;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 90%;
+  text-align: center;
+  margin: 1vh;
+}
+
+
+
+
+

@@ -55,4 +55,16 @@
 
 .arrow {
   width: 20%;
+  animation: arrow_left 2s infinite;
+}
+@keyframes arrow_left{
+  0%{
+    transform: translateX(20%);
+  }
+  50%{
+    transform: translateX(-20%);
+  }
+  100%{
+    transform: translateX(20%);
+  }
 }

@@ -5,9 +5,7 @@ import { OrbitControls, ScrollControls, Stage } from "@react-three/drei";
 import { Suspense, useRef } from "react";
 import { Candy } from "./Candy";
 
-const CanvasContainer = () => {
-  const button_ref1 = useRef();
-  const button_ref2 = useRef();
+const CanvasContainer = ({end1,end2}) => {
 
   return (
     <div className="canvas_contrainer">
@@ -16,10 +14,10 @@ const CanvasContainer = () => {
           <ambientLight intensity={1} />
           <Suspense fallback={null}>
             <Stage intensity={1} environment="city">
-              <Candy button_ref1={button_ref1} button_ref2={button_ref2} />
+              <Candy end1={end1} end2={end2}/>
             </Stage>
           </Suspense>
-          <ModelContainer button_ref1={button_ref1} button_ref2={button_ref2} />
+          <ModelContainer end1={end1} end2={end2}/>
         </ScrollControls>
       </Canvas>
     </div>

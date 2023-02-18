@@ -10,6 +10,7 @@ const VideoPlayer = (props) => {
         autoPlay
         className={`video ${props.arr === true ? "video_active" : null}`}
         loop="loop"
+        controls
       ></video>
     </div>
   );

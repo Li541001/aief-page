@@ -1,6 +1,6 @@
 import "../style.css";
 import qrcode from "./qrcode.png";
-import arrow from "./arrow.gif";
+import arrow from "./arrow.png";
 
 const QRcode = (props) => {
   return (
