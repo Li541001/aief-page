@@ -5,6 +5,10 @@ import img1 from "./11.jpg";
 import img2 from "./12.jpg";
 import img3 from "./21.jpg";
 import img4 from "./22.jpg";
+import img5 from "./31.png";
+import img6 from "./32.jpg";
+
+
 
 function PicCircle() {
   const circleList = [
@@ -29,6 +33,18 @@ function PicCircle() {
     {
       id: 4,
       img: img4,
+      picClassNames: "",
+      dotClassName: "",
+    },
+    {
+      id: 5,
+      img: img5,
+      picClassNames: "",
+      dotClassName: "",
+    },
+    {
+      id: 6,
+      img: img6,
       picClassNames: "",
       dotClassName: "",
     },

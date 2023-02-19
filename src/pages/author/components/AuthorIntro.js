@@ -69,24 +69,22 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author1}></img>
-            <p className="intro-name">營運總監 : 高睿澤</p>
+            <p className="intro-name">硬體工程師 : 同學A</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">高睿澤</span>
+              名稱: <span className="intro-text">同學A</span>
             </li>
             <li className="intro-li">
-              職位: <span className="intro-text">營運總監、硬體總工程師</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">78k</span>
+              職位: <span className="intro-text">作品總監、硬體工程師</span>
             </li>
             <li className="intro-li">
               具體工作內容:{" "}
               <span className="intro-text">
                 1.處理產品3D列印之類硬體方面問題<br></br>
-                2.針對產品的未來走向進行規劃和分析並且制定行銷策略
+                2.設計作品外型與機構製作<br></br>
+                3.針對作品的未來走向進行規劃和分析並且制定製作計畫
               </span>
             </li>
           </ul>
@@ -96,24 +94,22 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr2 === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author2}></img>
-            <p className="intro-name">軟體工程師 : 張立承</p>
+            <p className="intro-name">軟體工程師 : 同學B</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">張立承</span>
+              名稱: <span className="intro-text">同學B</span>
             </li>
             <li className="intro-li">
-              職位: <span className="intro-text">軟體總工程師</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">60k</span>
+              職位: <span className="intro-text">軟體工程師、軟體維護</span>
             </li>
             <li className="intro-li">
               具體工作內容:{" "}
               <span className="intro-text">
                 1.負責編寫Arduino、App Inventor和網頁的程式<br></br>
-                2.且給予軟體相關意見
+                2.給予軟體相關意見<br></br>
+                3.協助文書製作
               </span>
             </li>
           </ul>
@@ -123,101 +119,21 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr3 === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author3}></img>
-            <p className="intro-name">品質管理 : 林宸緯</p>
+            <p className="intro-name">品質管理 : 同學C</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">林宸緯</span>
+              名稱: <span className="intro-text">同學C</span>
             </li>
             <li className="intro-li">
-              職位: <span className="intro-text">品質管理</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">57k</span>
+              職位: <span className="intro-text">品質管理、文書處理</span>
             </li>
             <li className="intro-li">
               具體工作內容:{" "}
               <span className="intro-text">
-                1.負責檢查產品缺陷並對可以改善的部分提出意見
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="intro-range">
-        <div className={`intro-body ${arr4 === true ? "anime" : null}`}>
-          <div className="intro-left">
-            <img className="intro-author" src={A1}></img>
-            <p className="intro-name">顏質管理 : 崔辰卉</p>
-          </div>
-          <div className="line"></div>
-          <ul className="intro-ul">
-            <li className="intro-li">
-              名稱: <span className="intro-text">崔辰卉</span>
-            </li>
-            <li className="intro-li">
-              職位: <span className="intro-text">顏質管理</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">100K</span>
-            </li>
-            <li className="intro-li">
-              具體工作內容:{" "}
-              <span className="intro-text">
-                1.負責檢查產品缺陷並對可以改善的部分提出意見
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="intro-range">
-        <div className={`intro-body ${arr5 === true ? "anime" : null}`}>
-          <div className="intro-left">
-            <img className="intro-author" src={A2}></img>
-            <p className="intro-name">總策畫 : 劉毅安</p>
-          </div>
-          <div className="line"></div>
-          <ul className="intro-ul">
-            <li className="intro-li">
-              名稱: <span className="intro-text">劉毅安</span>
-            </li>
-            <li className="intro-li">
-              職位: <span className="intro-text">總策畫</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">90K</span>
-            </li>
-            <li className="intro-li">
-              具體工作內容:{" "}
-              <span className="intro-text">
-                1.負責檢查產品缺陷並對可以改善的部分提出意見
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="intro-range">
-        <div className={`intro-body ${arr6 === true ? "anime" : null}`}>
-          <div className="intro-left">
-            <img className="intro-author" src={A3}></img>
-            <p className="intro-name">總經理 : 鄭元皓</p>
-          </div>
-          <div className="line"></div>
-          <ul className="intro-ul">
-            <li className="intro-li">
-              名稱: <span className="intro-text">鄭元皓</span>
-            </li>
-            <li className="intro-li">
-              職位: <span className="intro-text">總經理</span>
-            </li>
-            <li className="intro-li">
-              月薪: <span className="intro-text">95K</span>
-            </li>
-            <li className="intro-li">
-              具體工作內容:{" "}
-              <span className="intro-text">
-                1.負責檢查產品缺陷並對可以改善的部分提出意見
+                1.負責檢查產品缺陷並對可以改善的部分提出意見<br></br>
+                2.處理文書相關部分
               </span>
             </li>
           </ul>
