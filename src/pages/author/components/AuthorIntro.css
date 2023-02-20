@@ -81,3 +81,30 @@
   opacity: 1;
   transform: translateY(0%);
 }
+@media(max-width:600px){
+  .intro-range {
+    height: 130vh;
+    padding: 0px 10px;
+  }
+  .intro-range:nth-child(even) {
+    background-color: #bbbbbb;
+  }
+  .intro-range:nth-child(odd) {
+    background-color: rgb(255, 248, 231);
+  }
+  .intro-name{
+    font-size: 20px;  
+  }
+  .intro-ul{
+    margin-top: 5vh;
+  }
+  .line{
+    display: none;
+  }
+  .intro-body{
+    flex-direction: column;
+  }
+  .intro-author{
+    width: 80vw;
+  }
+}
