@@ -9,19 +9,19 @@ const About = () => {
     <div className="about-range">
       <div className="about-ctrl">
         <img className="about-gif" src={team} />
-        <p className="about-content">: 台北市大安高級工業職業學校</p>
+        <p className="about-content blur">: 台北市大安高級工業職業學校</p>
       </div>
       <div className="about-ctrl">
         <img className="about-gif" src={phone} />
-        <p className="about-content">: 02-2709-1630</p>
+        <p className="about-content blur">: 02-2709-1630</p>
       </div>
       <div className="about-ctrl">
         <img className="about-gif" src={location} />
-        <p className="about-content">: 台北市大安區復興南路二段52號</p>
+        <p className="about-content blur">: 台北市大安區復興南路二段52號</p>
       </div>
       <div className="about-ctrl">
         <img className="about-gif" src={fix} />
-        <p className="about-content">: 張先生</p>
+        <p className="about-content">: 同學B</p>
       </div>
       <p className="about-content">
         為確保網頁瀏覽體驗，請確保您的網頁瀏覽器已更新至最新版本。因部分網頁內容不相容於Internet

@@ -25,3 +25,6 @@
 
   padding: 5px;
 }
+.blur{
+  filter: blur(10px);
+}
