@@ -1,9 +1,9 @@
 import { Html } from "@react-three/drei";
 import { forwardRef } from "react";
 import "./titleModel.css";
-import folder from "./folder.png"
+import folder from "./folder.png";
 
-const TitleModel = forwardRef(({end1,end2}) => {
+const TitleModel = forwardRef(({ end1, end2 }) => {
   const title = ["A", "I", "E", "F"];
   const text = [
     "A",
@@ -102,9 +102,15 @@ const TitleModel = forwardRef(({end1,end2}) => {
         <p>環保省電</p>
       </div>
       <div className="title_third" ref={end1}>
-        不論是機構的3D列印還是手機app的製作<br></br>更甚至是網頁的製作和資料的準備都是我們從無到有慢慢雕刻出來的
+        不論是機構的3D列印還是手機app的製作<br></br>
+        更甚至是網頁的製作和資料的準備都是我們從無到有慢慢雕刻出來的
       </div>
-      <a className="title_forth" ref={end2} href="https://drive.google.com/drive/folders/1FNIYf0Ylmu53IfdB7zN4okECB45lyobG?usp=sharing" target={"_blank"}>
+      <a
+        className="title_forth"
+        ref={end2}
+        href="https://drive.google.com/drive/folders/1FNIYf0Ylmu53IfdB7zN4okECB45lyobG?usp=sharing"
+        target={"_blank"}
+      >
         <img className="title_img" src={folder}></img>
         <div>更多資訊</div>
       </a>

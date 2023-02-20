@@ -2,59 +2,59 @@ import "./AuthorIntro.css";
 import author1 from "./author1.jpg";
 import author2 from "./author2.jpg";
 import author3 from "./author3.jpg";
-import A1 from "./A1.jpg";
-import A2 from "./A2.jpg";
-import A3 from "./A3.jpg";
+import useRwd from "../../../components/useRwd/useRwd";
 
 import { useState, useEffect } from "react";
 import { UESR_HIGH } from "../../../global/var";
 
 const AuthorIntro = () => {
+  const device = useRwd();
   const [arr, setArr] = useState(false);
   const [arr2, setArr2] = useState(false);
   const [arr3, setArr3] = useState(false);
-  const [arr4, setArr4] = useState(false);
-  const [arr5, setArr5] = useState(false);
-  const [arr6, setArr6] = useState(false);
 
   const handleScroll = () => {
     const y = document.scrollingElement.scrollTop;
     const distanse = UESR_HIGH * 0.3;
     const distanse2 = distanse + UESR_HIGH * 0.8;
     const distanse3 = distanse + UESR_HIGH * 1.6;
-    const distanse4 = distanse + UESR_HIGH * 2.2;
-    const distanse5 = distanse + UESR_HIGH * 2.8;
-    const distanse6 = distanse + UESR_HIGH * 3.8;
 
-    if (y >= distanse) {
-      setArr(true);
+    const distansePhone = UESR_HIGH * 0.3;
+    const distansePhone2 = distansePhone + UESR_HIGH * 1.3;
+    const distansePhone3 = distansePhone + UESR_HIGH * 2.6;
+
+    if (device === "computer") {
+      if (y >= distanse) {
+        setArr(true);
+      } else {
+        setArr(false);
+      }
+      if (y >= distanse2) {
+        setArr2(true);
+      } else {
+        setArr2(false);
+      }
+      if (y >= distanse3) {
+        setArr3(true);
+      } else {
+        setArr3(false);
+      }
     } else {
-      setArr(false);
-    }
-    if (y >= distanse2) {
-      setArr2(true);
-    } else {
-      setArr2(false);
-    }
-    if (y >= distanse3) {
-      setArr3(true);
-    } else {
-      setArr3(false);
-    }
-    if (y >= distanse4) {
-      setArr4(true);
-    } else {
-      setArr4(false);
-    }
-    if (y >= distanse5) {
-      setArr5(true);
-    } else {
-      setArr5(false);
-    }
-    if (y >= distanse6) {
-      setArr6(true);
-    } else {
-      setArr6(false);
+      if (y >= distansePhone) {
+        setArr(true);
+      } else {
+        setArr(false);
+      }
+      if (y >= distansePhone2) {
+        setArr2(true);
+      } else {
+        setArr2(false);
+      }
+      if (y >= distansePhone3) {
+        setArr3(true);
+      } else {
+        setArr3(false);
+      }
     }
   };
 

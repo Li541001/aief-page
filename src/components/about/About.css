@@ -25,6 +25,6 @@
 
   padding: 5px;
 }
-.blur{
+.blur {
   filter: blur(10px);
 }

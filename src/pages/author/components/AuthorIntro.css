@@ -35,10 +35,10 @@
   border: 2px solid snow;
   filter: blur(20px);
 }
-.intro-left::before{
+.intro-left::before {
   content: "晉級後解鎖";
   position: relative;
-  top:40vh;
+  top: 40vh;
   font-size: 2rem;
   z-index: 100;
   font-weight: bold;
@@ -81,7 +81,7 @@
   opacity: 1;
   transform: translateY(0%);
 }
-@media(max-width:600px){
+@media (max-width: 600px) {
   .intro-range {
     height: 130vh;
     padding: 0px 10px;
@@ -92,19 +92,19 @@
   .intro-range:nth-child(odd) {
     background-color: rgb(255, 248, 231);
   }
-  .intro-name{
-    font-size: 20px;  
+  .intro-name {
+    font-size: 20px;
   }
-  .intro-ul{
+  .intro-ul {
     margin-top: 5vh;
   }
-  .line{
+  .line {
     display: none;
   }
-  .intro-body{
+  .intro-body {
     flex-direction: column;
   }
-  .intro-author{
+  .intro-author {
     width: 80vw;
   }
 }

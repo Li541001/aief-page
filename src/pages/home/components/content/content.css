@@ -51,7 +51,7 @@
   right: 0px;
 }
 
-.content_title{
+.content_title {
   position: relative;
   color: #333;
   right: -3vw;
@@ -61,69 +61,68 @@
   text-align: center;
   letter-spacing: 1px;
 }
-.content_bg_right div:nth-child(1){
-  top:60vh;
+.content_bg_right div:nth-child(1) {
+  top: 60vh;
 }
-.content_bg_right div:nth-child(2){
-  top:60vh;   
+.content_bg_right div:nth-child(2) {
+  top: 60vh;
 }
-.content_bg_right div:nth-child(3){
-  top:150vh;
+.content_bg_right div:nth-child(3) {
+  top: 150vh;
 }
-.content_bg_right div:nth-child(4){
-  top:150vh;
+.content_bg_right div:nth-child(4) {
+  top: 150vh;
 }
-.content_bg_right div:nth-child(5){
-  top:280vh;
+.content_bg_right div:nth-child(5) {
+  top: 280vh;
 }
-.content_bg_right div:nth-child(6){
-  top:280vh;
+.content_bg_right div:nth-child(6) {
+  top: 280vh;
 }
-.content_bg_right div:nth-child(7){
-  top:440vh;
+.content_bg_right div:nth-child(7) {
+  top: 440vh;
   font-size: 3rem;
 }
-.content_bg_right div:nth-child(8){
-  top:440vh;
+.content_bg_right div:nth-child(8) {
+  top: 440vh;
   font-size: 1rem;
 }
 
-.content_bg_left div:nth-child(1){
-  top:60vh;
+.content_bg_left div:nth-child(1) {
+  top: 60vh;
   left: 3.5vw;
 }
-.content_bg_left div:nth-child(2){
-  top:60vh;   
+.content_bg_left div:nth-child(2) {
+  top: 60vh;
   left: 3vw;
 }
-.content_bg_left div:nth-child(3){
-  top:150vh;
+.content_bg_left div:nth-child(3) {
+  top: 150vh;
   left: 3.5vw;
 }
-.content_bg_left div:nth-child(4){
-  top:150vh;
+.content_bg_left div:nth-child(4) {
+  top: 150vh;
   left: 3vw;
 }
-.content_bg_left div:nth-child(5){
-  top:280vh;
+.content_bg_left div:nth-child(5) {
+  top: 280vh;
   left: 3.5vw;
 }
-.content_bg_left div:nth-child(6){
-  top:280vh;
+.content_bg_left div:nth-child(6) {
+  top: 280vh;
   left: 3vw;
-  
 }
-.content_bg_left div:nth-child(7){
-  top:440vh;
+.content_bg_left div:nth-child(7) {
+  top: 440vh;
   font-size: 3rem;
   left: 3.5vw;
 }
-.content_bg_left div:nth-child(8){
-  top:440vh;
+.content_bg_left div:nth-child(8) {
+  top: 440vh;
   font-size: 1rem;
   left: 3vw;
 }
-.content_content{
+.content_content {
   position: relative;
   color: #333;
   right: -3vw;
@@ -133,8 +132,3 @@
   text-align: center;
   margin: 1vh;
 }
-
-
-
-
-

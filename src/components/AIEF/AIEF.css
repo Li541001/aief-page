@@ -22,11 +22,10 @@
   width: 20%;
   transform: rotate(15deg);
 }
-@media(max-width:600px){
-  .fan{
+@media (max-width: 600px) {
+  .fan {
     bottom: -50px;
     width: 50%;
     right: 5%;
   }
-
 }

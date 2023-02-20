@@ -71,31 +71,29 @@ header {
   border-radius: 0%;
   transform: rotate(45deg);
 }
-.three_line_button{
+.three_line_button {
   background-color: #edf0f1;
   position: relative;
   width: 30px;
   height: 2px;
   border-radius: 10%;
-  box-shadow: 0px 12px 0px #edf0f1,
-              0px 24px 0px #edf0f1;
+  box-shadow: 0px 12px 0px #edf0f1, 0px 24px 0px #edf0f1;
 }
-.three_line_button_conatiner{
+.three_line_button_conatiner {
   width: 40px;
   height: 30px;
   position: relative;
-  
 }
-.logo_link{
+.logo_link {
   height: 5vw;
   position: absolute;
 }
-@media(max-width:600px){
+@media (max-width: 600px) {
   .nav-ul {
     list-style: none;
     display: none;
   }
-  header{
+  header {
     width: 100vw;
   }
 }

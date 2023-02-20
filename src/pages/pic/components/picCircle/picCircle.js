@@ -8,8 +8,6 @@ import img4 from "./22.jpg";
 import img5 from "./31.png";
 import img6 from "./32.jpg";
 
-
-
 function PicCircle() {
   const circleList = [
     {

@@ -21,7 +21,7 @@
   opacity: 0;
   transform: scale(0.1);
 }
-.mp4_range::before{
+.mp4_range::before {
   content: "晉級後解鎖";
   font-size: 1.4rem;
   font-weight: bold;
@@ -65,20 +65,19 @@
   width: 20%;
   animation: arrow_left 2s infinite;
 }
-@keyframes arrow_left{
-  0%{
+@keyframes arrow_left {
+  0% {
     transform: translateX(20%);
   }
-  50%{
+  50% {
     transform: translateX(-20%);
   }
-  100%{
+  100% {
     transform: translateX(20%);
   }
 }
-@media(max-width:600px){
-  .qr_img{
+@media (max-width: 600px) {
+  .qr_img {
     width: 60vw;
   }
-
 }

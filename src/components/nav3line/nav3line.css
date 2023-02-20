@@ -48,7 +48,7 @@
   height: 100%;
   padding: 1.5vh 4vh;
   text-decoration: none;
-  color:#333;
+  color: #333;
 }
 .deny_content:hover {
   background-color: #c1c0c0;
@@ -60,8 +60,8 @@
   transform: translateX(0px);
   visibility: visible;
 }
-@media(max-width:600px){
-  .deny_box{
+@media (max-width: 600px) {
+  .deny_box {
     right: 2vw;
   }
 }

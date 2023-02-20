@@ -2,7 +2,7 @@ import "./navigate.css";
 import Logo from "./logo.png";
 import Nav3line from "../nav3line/Nav3line";
 import useRwd from "../useRwd/useRwd";
-import "../nav3line/nav3line.css"
+import "../nav3line/nav3line.css";
 import { PAGE_TITLE_LIST } from "../../global/var";
 
 import { Link } from "react-router-dom";
@@ -11,10 +11,9 @@ import { useState, useEffect, useRef } from "react";
 const Navv = (props) => {
   const [value, setValue] = useState(1);
   const [clicked, setClicked] = useState(false);
-  const [linkOpen,setLinkOpen] = useState(false);
+  const [linkOpen, setLinkOpen] = useState(false);
 
-  const device = useRwd()
-  
+  const device = useRwd();
 
   const temp = useRef();
 
@@ -32,12 +31,15 @@ const Navv = (props) => {
     }
   }, []);
 
-  if(device === "computer"){
+  if (device === "computer") {
     return (
       <>
         <header>
           <img className="logo" src={Logo} />
-          <a href="https://li541001.github.io/choose" className="logo logo_link"></a>
+          <a
+            href="https://li541001.github.io/choose"
+            className="logo logo_link"
+          ></a>
           <nav>
             <ul className="nav-ul">
               <li className="nav-li">
@@ -89,34 +91,38 @@ const Navv = (props) => {
         </header>
         <Nav3line page={props.page} clicked={clicked} />
       </>
-  )}
-  else{
-    return(
+    );
+  } else {
+    return (
       <>
         <header>
           <img className="logo" src={Logo} />
-          <a href="https://li541001.github.io/choose" className="logo logo_link"></a>  
+          <a
+            href="https://li541001.github.io/choose"
+            className="logo logo_link"
+          ></a>
           <nav>
-            <div className="three_line_button_conatiner" onClick={()=>setLinkOpen(!linkOpen)}>
+            <div
+              className="three_line_button_conatiner"
+              onClick={() => setLinkOpen(!linkOpen)}
+            >
               <div className="three_line_button"></div>
             </div>
             <ul className="deny_box">
-              {PAGE_TITLE_LIST[4].map((item,index) => {
+              {PAGE_TITLE_LIST[4].map((item, index) => {
                 let { label, link } = item;
                 return (
-                  <li
-                    className={`deny ${linkOpen == true ? "actions" : null}`}
-                  >
+                  <li className={`deny ${linkOpen == true ? "actions" : null}`}>
                     <Link
-                        to={link}
-                        className="deny_content"
-                        onClick={() => {
-                          setValue(index);
-                          props.setPage(index);
-                        }}
-                      >
-                        {label}
-                      </Link>
+                      to={link}
+                      className="deny_content"
+                      onClick={() => {
+                        setValue(index);
+                        props.setPage(index);
+                      }}
+                    >
+                      {label}
+                    </Link>
                   </li>
                 );
               })}
@@ -124,7 +130,7 @@ const Navv = (props) => {
           </nav>
         </header>
       </>
-    )
+    );
   }
 };
 

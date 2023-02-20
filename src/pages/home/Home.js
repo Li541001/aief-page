@@ -1,11 +1,10 @@
 import "./Home.css";
 import CanvasContainer from "./components/canvasContainer/CanvasContainer";
-import { useEffect,useRef } from "react";
-
+import { useEffect, useRef } from "react";
 
 const Home = ({ setPage }) => {
-  const end1 = useRef()
-  const end2 = useRef()
+  const end1 = useRef();
+  const end2 = useRef();
 
   useEffect(() => {
     setPage(1);
@@ -13,7 +12,7 @@ const Home = ({ setPage }) => {
 
   return (
     <>
-      <CanvasContainer end1={end1} end2={end2}/>
+      <CanvasContainer end1={end1} end2={end2} />
     </>
   );
 };

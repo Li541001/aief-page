@@ -19,11 +19,11 @@ h2 {
   height: 45%;
   right: 30%;
 }
-@media(max-width:600px){
-  .gif{
+@media (max-width: 600px) {
+  .gif {
+    position: relative;
     height: 30%;
-    bottom: 10px;
-    right: 35%;
+    right: auto;
   }
 }
 .sub-text {
