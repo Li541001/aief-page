@@ -19,6 +19,13 @@ h2 {
   height: 45%;
   right: 30%;
 }
+@media(max-width:600px){
+  .gif{
+    height: 30%;
+    bottom: 10px;
+    right: 35%;
+  }
+}
 .sub-text {
   font-size: 20px;
 }

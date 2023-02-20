@@ -64,4 +64,19 @@ export const PAGE_TITLE_LIST = {
       pageHigh: BOTTOM,
     },
   ],
+    4:
+    [
+      {label: "產品特色",
+      link: "",
+    },
+    {
+      label: "團隊介紹",
+      link: "/author",
+    },
+    {
+      label: "產品展示",
+      link: "/pic",
+    },
+  ]
+  
 };

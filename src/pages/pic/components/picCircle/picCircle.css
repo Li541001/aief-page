@@ -44,7 +44,6 @@
   transform: scale(1.02);
   transition: 0.5s;
 }
-
 .prev,
 .next {
   cursor: pointer;
@@ -90,4 +89,11 @@
 .active,
 .dot:hover {
   background-color: #3f3f3f;
+}
+
+@media(max-width:600px){
+  .cir_img{
+    width: 80vw;
+    height: auto;
+  }
 }

@@ -76,3 +76,9 @@
     transform: translateX(20%);
   }
 }
+@media(max-width:600px){
+  .qr_img{
+    width: 60vw;
+  }
+
+}
