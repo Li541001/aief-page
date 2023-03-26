@@ -69,12 +69,12 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author1}></img>
-            <p className="intro-name">硬體工程師 : 同學A</p>
+            <p className="intro-name">硬體工程師 : 高睿澤</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">同學A</span>
+              名稱: <span className="intro-text">高睿澤</span>
             </li>
             <li className="intro-li">
               職位: <span className="intro-text">作品總監、硬體工程師</span>
@@ -94,12 +94,12 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr2 === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author2}></img>
-            <p className="intro-name">軟體工程師 : 同學B</p>
+            <p className="intro-name">軟體工程師 : 張立承</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">同學B</span>
+              名稱: <span className="intro-text">張立承</span>
             </li>
             <li className="intro-li">
               職位: <span className="intro-text">軟體工程師、軟體維護</span>
@@ -119,12 +119,12 @@ const AuthorIntro = () => {
         <div className={`intro-body ${arr3 === true ? "anime" : null}`}>
           <div className="intro-left">
             <img className="intro-author" src={author3}></img>
-            <p className="intro-name">品質管理 : 同學C</p>
+            <p className="intro-name">品質管理 : 林宸緯</p>
           </div>
           <div className="line"></div>
           <ul className="intro-ul">
             <li className="intro-li">
-              名稱: <span className="intro-text">同學C</span>
+              名稱: <span className="intro-text">林宸緯</span>
             </li>
             <li className="intro-li">
               職位: <span className="intro-text">品質管理、文書處理</span>

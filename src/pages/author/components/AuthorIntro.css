@@ -33,15 +33,6 @@
   margin-top: 10vh;
   height: 70%;
   border: 2px solid snow;
-  filter: blur(20px);
-}
-.intro-left::before {
-  content: "晉級後解鎖";
-  position: relative;
-  top: 40vh;
-  font-size: 2rem;
-  z-index: 100;
-  font-weight: bold;
 }
 .intro-name {
   margin-top: 2vh;
