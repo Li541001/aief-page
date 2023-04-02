@@ -1,4 +1,5 @@
 export const UESR_HIGH = window.innerHeight;
+export const UESR_WIDTH = window.innerWidth;
 export const Y = document.scrollingElement.scrollTop;
 const BOTTOM = UESR_HIGH * 3;
 const PAGE2_1 = UESR_HIGH * 0.92;

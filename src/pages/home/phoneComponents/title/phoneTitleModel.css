@@ -1,0 +1,46 @@
+.title_model_phone {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  background-color: #faf0d9;
+}
+.title_text_phone {
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  display: inline-block;
+  animation-name: ani;
+}
+.title_model_phone div {
+  overflow: hidden;
+  width: 20rem;
+}
+.title_content_phone {
+  font-size: 10px;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  display: inline-block;
+  animation-name: ani;
+  font-weight: bold;
+}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

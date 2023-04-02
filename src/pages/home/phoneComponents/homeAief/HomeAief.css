@@ -1,0 +1,24 @@
+.phone_title {
+  position: relative;
+  background-color: #7b7b7b;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.phone_title-text {
+  position: relative;
+  font-size: 1.8rem;
+  color: #333322;
+  font-weight: bold;
+  margin-left: 10%;
+}
+.phone_fan {
+  opacity: 0.15;
+  position: absolute;
+  transform: rotate(15deg);
+  bottom: -50px;
+  width: 50%;
+  right: 5%;
+}

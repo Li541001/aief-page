@@ -22,7 +22,6 @@
   transform: scale(1);
 }
 
-
 .qr_range {
   width: 100%;
   height: 90vh;
@@ -73,5 +72,9 @@
 @media (max-width: 600px) {
   .qr_img {
     width: 60vw;
+  }
+  .video {
+    height: auto;
+    width: 90%;
   }
 }

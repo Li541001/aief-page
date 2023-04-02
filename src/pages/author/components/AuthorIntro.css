@@ -97,5 +97,6 @@
   }
   .intro-author {
     width: 80vw;
+    height: auto;
   }
 }
