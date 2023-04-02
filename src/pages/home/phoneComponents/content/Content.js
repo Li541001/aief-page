@@ -1,4 +1,3 @@
-import { UESR_HIGH, UESR_WIDTH } from "../../../../global/var";
 import "./Content.css";
 import img1 from "./fan.jpg";
 import img2 from "./sublogo.png";
@@ -12,7 +11,9 @@ const Content = () => {
   const DISAPPEAR_FIRST = 1;
   const DISAPPEAR_DISTANCE = 1.5;
   const DISAPPEAR_DISTANCE_TWO = 1.6;
-  const ITEM_TOP = (UESR_HIGH / 900) * 400;
+  const baseHigh = 850;
+  const baseWidth = 450;
+  const ITEM_TOP = (baseHigh / 900) * 400;
 
   const one = useRef();
   const two = useRef();
@@ -46,63 +47,56 @@ const Content = () => {
     const y = document.scrollingElement.scrollTop;
     const num = y / LEVEL;
     let item = 0;
-    if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)) {
+    if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)) {
       item = 0;
-    } else if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2)) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2)) {
       item = 1;
-    } else if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3)) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3)) {
       item = 2;
-    } else if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4)) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4)) {
       item = 3;
-    } else if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5)) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5)) {
       item = 4;
-    } else if (y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6)) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6)) {
       item = 5;
-    } else if (
-      y <
-      UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 11)
-    ) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 12)) {
       item = 6;
-    } else if (
-      y <
-      UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 15)
-    ) {
+    } else if (y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 15)) {
       item = 7;
     }
 
     if (item < 6) {
       list[item].current.style.transform = ` scale(${
         num -
-        (UESR_HIGH * item * DISAPPEAR_DISTANCE + UESR_HIGH * DISAPPEAR_FIRST) /
+        (baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
           LEVEL
       })`;
       list[item].current.style.filter = `blur(${
         num / 5 -
-        (UESR_HIGH * item * DISAPPEAR_DISTANCE + UESR_HIGH * DISAPPEAR_FIRST) /
+        (baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
           LEVEL /
           5
       }px)`;
       list[item].current.style.top = `${
         num * ITEM_TOP -
-        ((UESR_HIGH * item * DISAPPEAR_DISTANCE + UESR_HIGH * DISAPPEAR_FIRST) /
+        ((baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
           LEVEL) *
           ITEM_TOP
       }px`;
     } else if (item < 7) {
       if (
         num -
-          (UESR_HIGH * item * DISAPPEAR_DISTANCE +
-            UESR_HIGH * DISAPPEAR_FIRST) /
+          (baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
             LEVEL >=
         1
       ) {
         for (let i = 6; i <= 9; i++) {
           if (
-            (-num + UESR_WIDTH * 0.075 + (UESR_WIDTH * (9 - 6)) / 50) * 15 >=
+            (-num + baseWidth * 0.0655 + (baseWidth * (9 - 6)) / 50) * 15 >=
             1
           ) {
             list[i].current.style.transform = `scale(1) translateX(${
-              (-num + UESR_WIDTH * 0.075 + (UESR_WIDTH * (i - 6)) / 50) * 15
+              (-num + baseWidth * 0.0655 + (baseWidth * (i - 6)) / 50) * 15
             }%)`;
           }
           if (i != 6) {
@@ -112,97 +106,95 @@ const Content = () => {
       } else {
         list[item].current.style.transform = ` scale(${
           num -
-          (UESR_HIGH * item * DISAPPEAR_DISTANCE +
-            UESR_HIGH * DISAPPEAR_FIRST) /
+          (baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
             LEVEL
         }) translateX(0)`;
         list[item].current.style.filter = `blur(0px)`;
         list[item].current.style.top = `${
           num * ITEM_TOP -
-          ((UESR_HIGH * item * DISAPPEAR_DISTANCE +
-            UESR_HIGH * DISAPPEAR_FIRST) /
+          ((baseHigh * item * DISAPPEAR_DISTANCE + baseHigh * DISAPPEAR_FIRST) /
             LEVEL) *
             ITEM_TOP
         }px`;
         setChangeModeHeight(
           `${
             num * ITEM_TOP -
-            ((UESR_HIGH * item * DISAPPEAR_DISTANCE +
-              UESR_HIGH * DISAPPEAR_FIRST) /
+            ((baseHigh * item * DISAPPEAR_DISTANCE +
+              baseHigh * DISAPPEAR_FIRST) /
               LEVEL) *
               ITEM_TOP -
-            UESR_HIGH / 10
+            baseHigh / 5
           }px`
         );
       }
     } else {
       list[9].current.style.transform = `translateY(${
-        (-num + UESR_HIGH * 0.0618) * 10
+        (-num + baseHigh * 0.067) * 10
       }%)`;
       list[10].current.style.transform = `translateY(${
-        (-num + UESR_HIGH * 0.0618) * 10
+        (-num + baseHigh * 0.067) * 10
       }%)`;
-      list[10].current.style.top = `150vh`;
+      list[10].current.style.top = `1000px`;
     }
     if (
-      y > UESR_HIGH * DISAPPEAR_FIRST &&
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)
+      y > baseHigh * DISAPPEAR_FIRST &&
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)
     ) {
       one.current.style.display = `block`;
     } else {
       one.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE)
     ) {
       two.current.style.display = `block`;
     } else {
       two.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 2)
     ) {
       three.current.style.display = `block`;
     } else {
       three.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 3)
     ) {
       four.current.style.display = `block`;
     } else {
       four.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 4)
     ) {
       five.current.style.display = `block`;
     } else {
       five.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 5)
     ) {
       six.current.style.display = `block`;
     } else {
       six.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 8) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 8) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6)
     ) {
       seven.current.style.display = `block`;
     } else {
       seven.current.style.display = `none`;
     }
     if (
-      y < UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 15) &&
-      y > UESR_HIGH * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6.8)
+      y < baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE_TWO * 15) &&
+      y > baseHigh * (DISAPPEAR_FIRST + DISAPPEAR_DISTANCE * 6.8)
     ) {
       eight.current.style.display = `block`;
       nine.current.style.display = `block`;
@@ -214,7 +206,7 @@ const Content = () => {
       ten.current.style.display = `none`;
       eleven.current.style.display = `none`;
     }
-    if (y >= UESR_HIGH * 21.5) {
+    if (y >= 19200) {
       setArrBottom(true);
     } else {
       setArrBottom(false);

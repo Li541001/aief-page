@@ -1,12 +1,12 @@
 .phoneContentContainer {
   width: 100vw;
-  height: 2200vh;
+  height: 19300px;
   position: relative;
   overflow: hidden;
   background-color: #faf0d9;
 }
 .phoneContentBox {
-  height: 100vh;
+  height: 850px;
   width: 100vw;
   position: fixed;
 }
@@ -14,7 +14,7 @@
   top: 50vh;
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #333;
 }
 .one {
