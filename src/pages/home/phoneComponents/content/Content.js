@@ -97,9 +97,12 @@ const Content = () => {
         1
       ) {
         for (let i = 6; i <= 9; i++) {
-          if ((-num + 31.5 + (UESR_WIDTH * (9 - 6)) / 50) * 15 >= 1) {
+          if (
+            (-num + UESR_WIDTH * 0.075 + (UESR_WIDTH * (9 - 6)) / 50) * 15 >=
+            1
+          ) {
             list[i].current.style.transform = `scale(1) translateX(${
-              (-num + 31.5 + (UESR_WIDTH * (i - 6)) / 50) * 15
+              (-num + UESR_WIDTH * 0.075 + (UESR_WIDTH * (i - 6)) / 50) * 15
             }%)`;
           }
           if (i != 6) {
@@ -133,8 +136,12 @@ const Content = () => {
         );
       }
     } else {
-      list[9].current.style.transform = `translateY(${(-num + 56.8) * 10}%)`;
-      list[10].current.style.transform = `translateY(${(-num + 56.8) * 10}%)`;
+      list[9].current.style.transform = `translateY(${
+        (-num + UESR_HIGH * 0.0618) * 10
+      }%)`;
+      list[10].current.style.transform = `translateY(${
+        (-num + UESR_HIGH * 0.0618) * 10
+      }%)`;
       list[10].current.style.top = `150vh`;
     }
     if (
