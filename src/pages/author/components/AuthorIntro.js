@@ -16,7 +16,7 @@ const AuthorIntro = () => {
   const handleScroll = () => {
     const y = document.scrollingElement.scrollTop;
     const distanse = UESR_HIGH * 0.3;
-    const distanse2 = distanse + UESR_HIGH * 0.8;
+    const distanse2 = distanse + UESR_HIGH * 0.9;
     const distanse3 = distanse + UESR_HIGH * 1.6;
 
     const distansePhone = UESR_HIGH * 0.3;
